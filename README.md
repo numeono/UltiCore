@@ -1,4 +1,6 @@
-# UltiCore
+<p align="center">
+  <img src="assets/ulticore-banner.svg" alt="UltiCore — open-source autonomous agent infrastructure" width="1200" />
+</p>
 
 Open-source autonomous agent infrastructure. Source code and full documentation are being prepared for public release.
 
