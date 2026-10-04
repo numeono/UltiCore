@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title description">
   <title id="title">ULTICORE</title>
-  <desc id="description">The full white Ultimum wordmark centered above ULTICORE in white and Vital-green ASCII lettering, on a deep blue-green background.</desc>
+  <desc id="description">ULTICORE centered in white and Vital-green ASCII lettering on a deep blue-green background, with the full white Ultimum wordmark as a small lower-right signature.</desc>
   <defs>
     <radialGradient id="ambient" cx="82%" cy="55%" r="68%">
       <stop offset="0" stop-color="#173A4A" stop-opacity=".55"/>
@@ -11,7 +11,7 @@
   <rect width="1200" height="340" rx="12" fill="url(#ambient)"/>
   <rect x=".5" y=".5" width="1199" height="339" rx="11.5" fill="none" stroke="#173A4A"/>
   <!-- Official white wordmark: https://www.ultimumgroup.com/brand/logo-ultimum.svg -->
-  <svg x="489" y="54" width="222" height="29.8333" viewBox="0 0 1332 179" fill="none" aria-label="Ultimum">
+  <svg x="972" y="284" width="180" height="24.1892" viewBox="0 0 1332 179" fill="none" aria-label="Ultimum">
     <g clip-path="url(#clip0_2081_131)">
     <path d="M715.6 60.1181V141.892C715.6 152.235 719.344 156.261 728.933 156.261H747.881V175.17H725.66C703.52 175.17 694.497 166.106 694.497 143.925V60.1316H669.973V41.2369H694.497V0.67334H715.613V41.21H747.895V60.1047H715.613L715.6 60.1181Z" fill="white"/>
     <path d="M599.149 0.67334V106.405C599.149 152.019 573.305 178.186 527.785 178.186C482.266 178.186 456.166 152.019 456.166 106.405V0.67334H478.306V106.405C478.306 140.491 494.952 157.77 527.785 157.77C560.619 157.77 577.264 140.491 577.264 106.405H577.251V0.67334H599.135H599.149Z" fill="white"/>
@@ -37,7 +37,7 @@
     </defs>
   </svg>
   <g font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace">
-    <g transform="translate(0 24)" font-size="24" xml:space="preserve" style="white-space:pre">
+    <g transform="translate(3 -14)" font-size="24" xml:space="preserve" style="white-space:pre">
       <text x="165.4 223.0 280.6 395.8 410.2 424.6 439.0 453.4 511.0 525.4 539.8" y="115" fill="#FFFFFF">___________</text>
       <text x="611.8 626.2 640.6 655.0 727.0 741.4 755.8 827.8 842.2 856.6 871.0 957.4 971.8 986.2 1000.6 1015.0" y="115" fill="#0AE6B3">________________</text>
       <text x="151.0 179.8 208.6 237.4 266.2 295.0 381.4 395.8 453.4 467.8 496.6 511.0 539.8 554.2" y="141" fill="#FFFFFF">|||||||__||__|</text>
