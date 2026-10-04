@@ -1,19 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title description">
   <title id="title">ULTICORE</title>
-  <desc id="description">ULTICORE in ASCII lettering, white and Vital green on Ultimum's deep blue-green. Open-source autonomous agent infrastructure.</desc>
+  <desc id="description">ULTICORE in ASCII lettering, white and Vital green on Ultimum's deep blue-green, with the Ultimum symbol.</desc>
   <defs>
     <radialGradient id="ambient" cx="82%" cy="55%" r="68%">
       <stop offset="0" stop-color="#173A4A" stop-opacity=".55"/>
       <stop offset="1" stop-color="#0C232A" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <rect width="1200" height="340" rx="12" fill="#0C232A"/>
-  <rect width="1200" height="340" rx="12" fill="url(#ambient)"/>
-  <rect x=".5" y=".5" width="1199" height="339" rx="11.5" fill="none" stroke="#173A4A"/>
+  <rect width="1200" height="300" rx="12" fill="#0C232A"/>
+  <rect width="1200" height="300" rx="12" fill="url(#ambient)"/>
+  <rect x=".5" y=".5" width="1199" height="299" rx="11.5" fill="none" stroke="#173A4A"/>
   <path d="M48 38v12l6 6h28l6-6V38" fill="none" stroke="#0AE6B3" stroke-width="4"/>
   <g font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace">
-    <text x="106" y="51" fill="#D9D9D9" font-size="12" letter-spacing="2.2">ULTIMUM / OPEN SOURCE</text>
-    <path d="M48 77H1152" stroke="#173A4A"/>
     <g font-size="24" xml:space="preserve" style="white-space:pre">
       <text x="165.4 223.0 280.6 395.8 410.2 424.6 439.0 453.4 511.0 525.4 539.8" y="115" fill="#FFFFFF">___________</text>
       <text x="611.8 626.2 640.6 655.0 727.0 741.4 755.8 827.8 842.2 856.6 871.0 957.4 971.8 986.2 1000.6 1015.0" y="115" fill="#0AE6B3">________________</text>
@@ -28,15 +26,5 @@
       <text x="165.4 179.8 194.2 208.6 223.0 266.2 280.6 295.0 309.4 323.8 338.2 352.6 410.2 424.6 439.0 496.6 511.0 525.4 539.8 554.2" y="245" fill="#FFFFFF">\___/|_____||_||___|</text>
       <text x="597.4 611.8 626.2 640.6 655.0 669.4 712.6 727.0 741.4 755.8 770.2 813.4 827.8 842.2 885.4 899.8 914.2 943.0 957.4 971.8 986.2 1000.6 1015.0 1029.4" y="245" fill="#0AE6B3">\____|\___/|_|\_\|_____|</text>
     </g>
-    <path d="M48 276H1152" stroke="#173A4A"/>
-    <path d="M48 276H96" stroke="#0AE6B3" stroke-width="2"/>
-    <text x="48" y="310" fill="#0AE6B3" font-size="14">&gt;_</text>
-    <text x="81" y="310" fill="#D9D9D9" font-size="14">Autonomous agent infrastructure.</text>
-  </g>
-  <g transform="translate(1040 298)">
-    <rect width="28" height="14" fill="#173A4A"/>
-    <rect x="28" width="28" height="14" fill="#0AE6B3"/>
-    <rect x="56" width="28" height="14" fill="#D9D9D9"/>
-    <rect x="84" width="28" height="14" fill="#FFFFFF"/>
   </g>
 </svg>
