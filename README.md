@@ -2,7 +2,13 @@
   <img src="assets/ulticore-banner.svg" alt="UltiCore — open-source autonomous agent infrastructure" width="1200" />
 </p>
 
-Open-source autonomous agent infrastructure. Source code and full documentation are being prepared for public release.
+Open-source autonomous agent infrastructure.
+
+## Development Status
+
+UltiCore is in final development ahead of its first public alpha. The alpha release is targeted for the coming weeks—approximately two weeks from this update (October 7, 2026). Source code, setup instructions, and technical documentation will be published here as part of that release.
+
+This repository currently serves as a preview. Watch the repository for release updates.
 
 ## Agent Computer-Use System
 
