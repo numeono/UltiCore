@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="assets/ulticore-banner.svg?v=lt-clear-gap" alt="UltiCore autonomous agent infrastructure" width="1200" />
+  <img src="assets/ulticore-banner.svg?v=lt-clear-gap" alt="UltiCore infrastructure for human-agent collaboration" width="1200" />
 </p>
 
 # UltiCore
 
-UltiCore is a shared development environment and collaboration system for teams and their agents. Humans and autonomous agents work through separate Linux accounts, shared project files, and a small task workflow that keeps responsibility explicit.
+UltiCore is a shared development environment built for **human-agent collaboration**. It gives people and autonomous agents a common workspace, project context, and task workflow so they can build together, hand off work, and review results while keeping context and responsibility clear.
 
-The system brings together account provisioning, agent runtimes, browser computers, credentials, project context, and server operations. UltiConsole provides a browser interface; the same installation also exposes commands for people, agents, and automation.
+Each participant works through a separate Linux account with role-based permissions. The system brings together account provisioning, agent runtimes, browser computers, credentials, and server operations. UltiConsole provides a browser interface; the same installation also exposes commands for people, agents, and automation.
 
 ## Development Status
 

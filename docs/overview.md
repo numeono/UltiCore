@@ -1,6 +1,6 @@
 # Overview
 
-UltiCore is a shared development environment and collaboration system for a team and its agents. Each participant has a Linux user account. Project files give the team a shared place to work, tasks record responsibility, and account-specific instructions help each coding tool or agent find the relevant context.
+UltiCore is a shared development environment built for human-agent collaboration. People and autonomous agents work in the same project folders, use a common task workflow, and carry project context across handoffs. Each participant has a separate Linux user account, with permissions set by role. Account-specific instructions help each coding tool or agent find the context it needs.
 
 The organization using an installation is configured separately from UltiCore itself. Its name, description, and internal workspace folder come from `/server/organization.json`, managed by `setup organization`. Reusable tools and documentation should not assume a particular organization, person, or hostname.
 
