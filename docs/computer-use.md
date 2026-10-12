@@ -1,10 +1,10 @@
-# Computer use
+# Computer Use
 
 UltiCore gives an account a real Chromium browser on a virtual display. An agent can drive it with commands, and a person can watch or take control through a browser portal. Both see the same page and use the same login state.
 
 The browser renders into an Xpra display even when nobody is watching. In this stack, `headless` means that no portal is published; it does not mean that the page is unrendered. Plain page fetches and API requests remain available when an interactive browser is unnecessary.
 
-## One session, several ways to act
+## One Session, Several Ways to Act
 
 `computer-use headless [URL]` starts or resumes the account's browser for automated work. `computer-use start [URL]` starts or resumes it with portal access appropriate to the launch context. The account has one live session, so later work should reuse it rather than create competing browsers.
 
@@ -20,7 +20,7 @@ DOM snapshots include reachable same-origin frames. Cross-origin frames are repo
 
 Use `computer-use dom upload` to supply a server file directly to the browser's file input. Clicking an upload button can open a native chooser outside the page and block subsequent actions. Verify that the destination stored the file.
 
-## Persistent logins
+## Persistent Logins
 
 A session starts from a saved profile seed and writes updated authentication state back during normal cleanup. Seeds retain cookies and selected browser storage, along with browsing history. They do not restore the previous session's open tabs.
 
@@ -30,7 +30,7 @@ Seeds contain live credentials and stay in protected account storage. Inspect ac
 
 For password entry, the secret-aware browser commands obtain the selected credential through the managed secret path. Credentials should not pass through model-visible command arguments or pasted transcripts. Human involvement remains necessary for factors that the account cannot complete, such as a device-bound approval.
 
-## Watching and sharing
+## Watching and Sharing
 
 `computer-use watch` creates a portal for an existing session, including one started headlessly. It returns a token-bearing link and holds the session open long enough for a handoff. The link grants control of a logged-in browser and must go only to its intended viewers.
 
@@ -40,7 +40,7 @@ An account can expose its own browser. Directly watching another account's priva
 
 The Shared computer is a deliberate exception to individual ownership. Every UltiCore account can use its one communal profile, and several people can connect to the same live portal. Everyone sees and controls the same browser; concurrent clicks can interfere. Logins and browser state on Shared are shared with its users. It provides no separation between those people.
 
-## Evidence and completion
+## Evidence and Completion
 
 `computer-use screenshot` captures the visible display. `computer-use capture start` records the existing session without changing its resolution or presentation, and `capture stop` finalizes the recording while leaving the browser open. Use the separate `demo` workflow when presentation pacing and styling matter.
 

@@ -1,8 +1,8 @@
-# Getting started
+# Getting Started
 
 This guide covers preparation and onboarding to an existing UltiCore installation. The public repository does not yet contain the source distribution or a tested installer. Cloning it provides documentation and assets, not a working server.
 
-## Preparing a host
+## Preparing a Host
 
 UltiCore's current operational guides assume Ubuntu Server, Linux user accounts and groups, systemd, and private network access through Tailscale. A deployment also needs storage, credential handling, and a recovery plan appropriate to the services it runs. This preview makes no tested minimum hardware claim.
 
@@ -16,7 +16,7 @@ Before handing a host to a team, the administrator needs to establish:
 
 The guides describe those responsibilities; they do not replace the pending clean-install and restore tests for the public source distribution. Do not copy a running installation's credential files or private operational snapshot into a public repository.
 
-## Provision an account
+## Provision an Account
 
 On an installed host, an UltiBoss uses the role-aware provisioning commands:
 
@@ -31,7 +31,7 @@ Choose the role before provisioning. UltiBoss grants full administrative authori
 
 Use `user setup <username>` to resume human onboarding. Plain Linux account creation does not perform the UltiCore group, instruction, and runtime setup.
 
-## Configure the organization
+## Configure the Organization
 
 An UltiBoss runs:
 
@@ -42,7 +42,7 @@ setup organization show
 
 The profile supplies the organization description and internal workspace folder used in generated context. Keep credentials out of it. Choose the workspace folder name carefully; changing it after projects exist needs a separate path migration.
 
-## Orient a teammate
+## Orient a Teammate
 
 Read `~/permissions.md` and the role section in `~/ULTICORE.md`. Confirm the project folder and any additional path grants. Human instructions contain a generated section and a preserved personal section; put personal notes only in the latter.
 
@@ -61,7 +61,7 @@ These commands include interactive configuration. Run only the steps the teammat
 
 An UltiUser does not have the full `setup`, `files`, or `health` interface. The administrator supplies its connection details and authorized project paths. UltiUsers can check software with `software lookup` and file a shared installation request with `software request install`.
 
-## Open the project
+## Open the Project
 
 Remote editors connect to the teammate's Linux account over the configured SSH route. Authenticate the host before trusting it, then open an authorized project folder. Files and terminal programs run on the server.
 
@@ -69,7 +69,7 @@ Project working files live under `/workspace/files`; code repositories live unde
 
 `setup terminal` can configure a persistent tmux workflow for a trusted account. This can preserve a session across disconnection when the account's process lifecycle permits it. Reboot ends tmux processes; unattended work that must restart needs a managed service or job.
 
-## Verify the account can work
+## Verify the Account Can Work
 
 Check that the teammate can open its project, use its selected coding tool, and perform a small read with each required integration. One tool's connection does not establish access in another tool or in an unattended job.
 

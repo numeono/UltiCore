@@ -1,4 +1,4 @@
-# Project workflow
+# Project Workflow
 
 A project folder holds the shared context needed to continue work: received material, plans, review candidates, retained results and conversation summaries. Read its `README.md` or `CONTEXT.md` before adding files or structure.
 
@@ -13,7 +13,7 @@ The first holds client and partner work. The second holds internal projects unde
 
 Every account, including an UltiUser, can read and write the shared workspace. A project folder is not a private access boundary. Keep credentials and material requiring restricted access outside it; see the [security model](security-model.md).
 
-## The project folders
+## The Project Folders
 
 Creating a project through UltiConsole Files creates these base folders. The dashboard protects the folders from renaming, moving and deletion while allowing their contents to change.
 
@@ -34,7 +34,7 @@ Use `review FILE [PROJECT]` to move a candidate into review. Pair that file move
 
 UltiConsole Files exposes `/workspace/files`. Keep deliverables there and link them from task records under `/workspace/tasks` through `context` or `evidence`.
 
-## Start the conversation in its project
+## Start the Conversation in Its Project
 
 The nightly publisher routes a human conversation by the initial working directory recorded by its coding tool. Start Claude Code or Codex inside the direct project folder, or one of its subfolders:
 
@@ -45,7 +45,7 @@ codex
 
 The same routing rule applies to `claude`. Starting in a repository under `/repos`, a home directory or another location does not qualify, even if a later turn changes directory into the workspace project. Leave an explicit handoff in the project for that work. An UltiAgent's work gets its project from the task's `project` field.
 
-## What the nightly summaries contain
+## What the Nightly Summaries Contain
 
 The nightly workflow publishes eligible handoffs into the three `sessions/` folders. Hermes summaries come from project-tagged task records with an outcome, including finished work awaiting acceptance `In Review`. This path reads task records and does not summarize Hermes transcripts through another model.
 

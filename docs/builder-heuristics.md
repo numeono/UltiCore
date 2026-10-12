@@ -1,10 +1,10 @@
-# Builder heuristics
+# Builder Heuristics
 
 The builder heuristics guide **how we build** and **what we build on**. They apply to code, infrastructure, commands, skills, and documentation. Each group is in priority order: when two conflict, the higher one wins. On an installed server, `setup heuristics` controls their inclusion in account instructions.
 
 **Call them by name.** Collectively they are the **builder heuristics**; individually, **"builder heuristic N"**. When you invoke one in a PR, a Slack message, or a note to a teammate, name it and say where it lives: *"that cuts against **Standard is best**, builder heuristic 4, see `/server/docs/builder-heuristics.md`"*.
 
-## How we build
+## How We Build
 
 **1. The best part is no part.** Before adding a file, dependency, service, config flag, abstraction or script, try to **delete the need for it**. Reuse what already exists, or show the problem doesn't need solving. Every part added is a part someone must understand, maintain, secure, back up and eventually remove.
 
@@ -24,13 +24,13 @@ The builder heuristics guide **how we build** and **what we build on**. They app
 
 **8. Production-ready, productizable and open-sourceable.** Build work that could ship: errors handled, sane defaults, deployable by a stranger without you narrating it. Hardcode nothing that would be hard to rip out, including a person's home directory, organization name, hostname or credential, so publishing it on GitHub, or deploying it for a client, takes little more than pushing it. Most of what we build here is the reference implementation for what we sell.
 
-## Choosing tools, dependencies, and services
+## Choosing Tools, Dependencies, and Services
 
 **9. Open source, and commercially usable.** Prefer open source under **permissive** licences, such as MIT, Apache-2.0, and BSD. Check the licence *before* adopting: copyleft and source-available licences (GPL/AGPL, SSPL, BSL/Elastic) can impose obligations or restrictions on shipped client work, so they need a deliberate decision, not a default. Closed source is the exception that must be argued for.
 
 **10. Self-hostable, and owned rather than rented.** Favour software we can run on our own hardware. A hosted tier counts only if we could move it in-house later: an open-source server, a documented deploy, exportable data, no proprietary lock-in. All else close to equal, prefer free, one-time or metered pricing over per-seat subscriptions, which tax growth and hand the vendor a pricing lever. Cost is a tiebreaker, not a gate: where a subscription is genuinely the best tool for something mission-critical (Claude Code, OpenRouter, Slack), pay for it without apology, and reserve the pressure for the incidental and the replaceable.
 
-## When a heuristic can't be met
+## When a Heuristic Can't Be Met
 
 Some things have no compliant option, such as a client's platform, a vendor API, or a seat-based service with no self-hosted equivalent. Break the heuristic deliberately: say which one and why, keep the offender at the **edge** behind a swappable boundary (heuristic 7), and don't let it become the precedent for the next decision.
 

@@ -4,7 +4,7 @@ UltiCore is a shared development environment and collaboration system for a team
 
 The organization using an installation is configured separately from UltiCore itself. Its name, description, and internal workspace folder come from `/server/organization.json`, managed by `setup organization`. Reusable tools and documentation should not assume a particular organization, person, or hostname.
 
-## Accounts and interfaces
+## Accounts and Interfaces
 
 Each account holds one role: UltiBoss, UltiDev, UltiAgent, or UltiUser. An UltiBoss administers the machine. UltiDevs and UltiAgents work in shared development areas without general administrative authority. UltiUsers receive narrower access and explicit grants for additional paths or commands.
 
@@ -14,7 +14,7 @@ People can use a terminal, a remote editor, their chosen coding CLI, or UltiCons
 
 UltiConsole's Computers interface provides access to authorized server browser sessions and account files. Access to another account's computer depends on role and target account. The shared computer is communal; it should be treated as shared working state.
 
-## Where things live
+## Where Things Live
 
 | Path | Purpose |
 |---|---|
@@ -35,15 +35,15 @@ Every account can read and write shared working files in `/workspace`. Restricte
 
 On a trusted account, `files` builds the documented directory map from folder READMEs. `files all` expands collapsed entries, and `files current` explores the current tree. `docs` lists operational documentation. These commands report the actual installation rather than a fixed inventory in a guide.
 
-## How work moves
+## How Work Moves
 
 Read a project's `README.md` or `CONTEXT.md` before adding files. Use [UltiScrum](ultiscrum.md) when work crosses accounts. The task names its owner and next actor, links the relevant material, and records handoffs and outcomes on one timeline.
 
 The [project workflow](project-workflow.md) places incoming material in `intake/`, approaches in `plans/`, review candidates in `review/`, and retained outputs in `artifacts/`. Session summaries preserve a useful handoff while raw conversations remain private.
 
-## Instructions and commands
+## Instructions and Commands
 
-Human accounts receive `~/ULTICORE.md`; autonomous agents receive mission-specific runtime instructions. Shared skills hold narrow procedures and load when needed. Operational docs explain why those procedures exist. See [context management](context-management.md).
+Human accounts receive `~/ULTICORE.md`; autonomous agents receive mission-specific runtime instructions. Shared skills hold narrow procedures and load when needed. Operational docs explain why those procedures exist. See [Context Management](context-management.md).
 
 Custom commands encode provisioning, permissions, change tracking, and recovery conventions. Use a provided command when it covers the action. `commands` lists the commands visible to the account, and `<command> help` explains its arguments.
 

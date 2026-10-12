@@ -1,8 +1,8 @@
-# Operations and recovery
+# Operations and Recovery
 
 UltiCore separates managed system files, project repositories, and working data. Each needs its own change history and recovery coverage. A successful Git push does not establish that working files or databases can be restored.
 
-## Record managed changes
+## Record Managed Changes
 
 Local Git histories track managed content under `/server`, `/agents`, and selected parts of `/workspace`. Home histories use explicit allowlists. Read the tracked files and ignore rules before assuming a directory has version history.
 
@@ -14,9 +14,9 @@ sudo /server/scripts/record-change "Clarify the setup procedure" /server/docs/ex
 
 Without paths, the helper can stage unrelated work in the same repository. Automatic commits provide a fallback but may attribute an edit by file ownership or as `auto`; they do not reliably identify the editor.
 
-Change generated instructions through their source documentation and configuration. The instruction watcher regenerates account context, and the skills watcher maintains human skill links. See [context management](context-management.md).
+Change generated instructions through their source documentation and configuration. The instruction watcher regenerates account context, and the skills watcher maintains human skill links. See [Context Management](context-management.md).
 
-## Collaborate through project repositories
+## Collaborate through Project Repositories
 
 A team repository can use a bare hub under `/repos/bare`, with working copies under `/repos`. Access depends on the hub's actual permissions. A hub enrolled in the installation's GitHub mirror has a remote named `github`.
 
@@ -28,7 +28,7 @@ Local hooks can restrict ordinary pushes to protected branches. They do not prov
 
 An agent can use the hub without holding a GitHub credential. Direct API operations can use a dedicated GitHub App installed on selected repositories. The App and its private key still require an explicit grant and a revocation process.
 
-## Inspect health and maintenance
+## Inspect Health and Maintenance
 
 Trusted accounts can start with:
 
@@ -48,7 +48,7 @@ Maintenance has separate paths for ordinary security updates, reviewed dependenc
 
 Manual upgrades normally check for active users. The check covers specific session and job mechanisms, not every possible background process. Scheduled maintenance can proceed while people are active. Gateway draining gives existing agent turns time to finish, but a reboot can still interrupt unfinished work. Save progress to files and task outcomes before a planned window.
 
-## Understand backup coverage
+## Understand Backup Coverage
 
 Restic provides encrypted filesystem backups according to the installation's configured sources, exclusions, mount boundaries, retention, and hooks. Inspect `/etc/ulticore-backup/config` and the exclusion policy with appropriate administrative access. Keep credential values out of diagnostic output.
 
@@ -69,13 +69,13 @@ A file traversal of a running database does not establish a consistent database 
 
 Keep the recovery password available through an approved store outside the server. A password held only inside its own encrypted backup cannot unlock that backup after the original machine is lost. A repository on another disk in the same machine also needs separate offsite coverage for whole-machine loss.
 
-## Distinguish the private Git snapshot
+## Distinguish the Private Git Snapshot
 
 `backup snapshot` exports selected committed managed files to a private repository. It omits ordinary workspace projects, code repositories, bulk data, and other material outside its explicit source selection. This is an operational recovery mechanism, not a public release export or a full machine backup.
 
 Filename and content checks reduce accidental disclosure but cannot prove that arbitrary tracked text contains no private information. Review the selected content before changing the export boundary. Keep installation configuration, account metadata, and recovery records private.
 
-## Verify restoration
+## Verify Restoration
 
 Restore to a fresh, isolated destination. Inspect the result before copying selected files into their intended locations. Do not restore a whole snapshot over a running system.
 

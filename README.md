@@ -8,7 +8,7 @@ UltiCore is a shared development environment and collaboration system for teams 
 
 The system brings together account provisioning, agent runtimes, browser computers, credentials, project context, and server operations. UltiConsole provides a browser interface; the same installation also exposes commands for people, agents, and automation.
 
-## Development status
+## Development Status
 
 UltiCore is preparing for its first public alpha. This repository currently contains documentation and visual assets. The guides describe the running system and its operating model; the source distribution and a reproducible installation package are not included yet.
 
@@ -16,7 +16,7 @@ Before publishing the source distribution, the actual export still needs review,
 
 Start with the [overview](docs/overview.md), or browse the [documentation index](docs/README.md).
 
-## Security model
+## Security Model
 
 Everyone working on UltiCore gets a standard Linux user account with one of four roles: UltiBoss, UltiDev, UltiAgent, or UltiUser. The roles distinguish administrative authority and filesystem reach from the context supplied to a coding tool or autonomous agent.
 
@@ -32,25 +32,25 @@ Each task has one owner, one timeline, and an explicit next actor. Six statuses 
 
 Read [UltiScrum](docs/ultiscrum.md) and the [project workflow](docs/project-workflow.md).
 
-## Agent computer-use system
+## Agent Computer-Use System
 
 UltiCore runs browser sessions on the server. Agents can use DOM controls, mouse and keyboard input, and clipboard operations. A person can open an authorized live portal to inspect or take over a session. Saved browser state belongs to the account running it.
 
 Read [computer use](docs/computer-use.md) for session control, browser profiles, recording, and access rules.
 
-## Autonomous agent stack
+## Autonomous Agent Stack
 
 An UltiAgent combines a Linux account, the Hermes runtime, a defined mission, selected skills, and explicitly configured service access. Persistent gateways receive messages; scheduled and transient jobs cover other execution patterns. Shared tasks record responsibility across accounts.
 
 Read [agent runtime and lifecycle](docs/agent-runtime.md).
 
-## Context management
+## Context Management
 
 UltiCore separates the context an account always receives from the guidance it loads for a particular job. Human accounts use `ULTICORE.md`; UltiAgents use `SOUL.md`. Shared skills contain narrow workflows, documentation explains the system, and project summaries let work continue across tools and sessions.
 
-Read [context management](docs/context-management.md) and the [builder heuristics](docs/builder-heuristics.md).
+Read [Context Management](docs/context-management.md) and the [builder heuristics](docs/builder-heuristics.md).
 
-## Working with an existing installation
+## Working with an Existing Installation
 
 The [getting started guide](docs/getting-started.md) covers account onboarding and the commands used after deployment. [Operations and recovery](docs/operations.md) covers managed changes, repository workflows, maintenance, backups, and restore verification.
 

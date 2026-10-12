@@ -1,10 +1,10 @@
-# Context management
+# Context Management
 
 UltiCore separates instructions that apply to every session from procedures needed for a particular job and evidence belonging to a project. An agent should know its responsibilities before it starts, then read the relevant procedure and source material when the task requires them.
 
 Ordinary files and runtime instruction mechanisms provide that context. A short prompt does not create a permission boundary.
 
-## Account instructions
+## Account Instructions
 
 Humans have `~/ULTICORE.md`. Its generated region supplies organization context and the orientation appropriate to the account's role. UltiDevs and UltiBosses receive the broad overview and command index, with the builder heuristics when opted in. UltiUsers receive a narrower orientation and their grants.
 
@@ -18,7 +18,7 @@ Claude on an UltiAgent account points at that same instruction file. Delegated C
 
 Runtime session state is separate from file state. Hermes reads instructions when it constructs the session prompt and again during compaction. Saving a mission change does not immediately replace the prompt in an existing conversation. A fresh session is the reliable way to apply it at once.
 
-## Procedures loaded when needed
+## Procedures Loaded When Needed
 
 Shared skills live at `/agents/skills/<category>/<skill>/SKILL.md`. A skill contains a focused procedure, with reusable helper code beside it where necessary. Documentation under `/server/docs` explains the system and why the procedure exists.
 
@@ -40,7 +40,7 @@ Skill selection controls discovery, not Linux access. An agent with a small sele
 
 Run logs remain separate from reusable instructions, and project evidence stays out of unrelated startup prompts.
 
-## Task context and portable handoffs
+## Task Context and Portable Handoffs
 
 An UltiScrum task holds the assignment and links to supporting context or evidence. Artifacts stay in the project. A handoff preserves the task and its timeline, so the next owner can read the request, decisions and result together. See [project workflow](project-workflow.md) for the folder structure.
 

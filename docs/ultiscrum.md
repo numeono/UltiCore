@@ -4,7 +4,7 @@ Most task management systems are needlessly complex. UltiScrum is optimized for 
 
 UltiScrum is part of UltiCore. The `task` command and the Tasks tab in UltiConsole read and update the same records under `/workspace/tasks`. Each task has one owner and one timeline. Every live task waits on one account until someone passes it on or closes it.
 
-## Six statuses
+## Six Statuses
 
 | Status | Meaning | Whose action is needed |
 |---|---|---|
@@ -17,7 +17,7 @@ UltiScrum is part of UltiCore. The `task` command and the Tasks tab in UltiConso
 
 Reading a task does not change its status. Tasks do not expire. Unstarted and blocked work stays visible until someone acts on it, and terminal records remain available with their outcomes and evidence.
 
-## Owner, requester and next action
+## Owner, Requester and Next Action
 
 The **owner** does the work. The **requester** put the work in front of that owner: the original sender, or the author of the latest handoff. The **next actor** is the account whose action is currently needed. Blocking a task or requesting review changes the next actor while keeping its owner.
 
@@ -27,7 +27,7 @@ Work requested by an agent, and work assigned to oneself, goes directly to `Impl
 
 A handoff transfers the same task to a new owner and queue, resets it to `Open`, and preserves its ID, context and timeline. The handoff author becomes its requester. Use a new task for new work on a subject that already has a completed task, and link the earlier result as context.
 
-## A short workflow
+## A Short Workflow
 
 These commands run on a configured UltiCore installation. Replace `WORKER` with an account name and `TASK_ID` with the ID returned by `task send`. The example project and its folders must already exist. `task help` lists the installed command's full syntax.
 
@@ -73,7 +73,7 @@ task accept WORKER TASK_ID "Accepted the deployment plan." \
 
 Acceptance does not move the file for you. The task's evidence should point to the retained result. For a return, `task resume` puts the task back `In Progress` with the same owner and the reviewer's note on its timeline.
 
-## Blockers, handoffs and notes
+## Blockers, Handoffs and Notes
 
 Name what is missing and who can provide it:
 
@@ -99,7 +99,7 @@ task note NEXT_OWNER TASK_ID "The plan now includes the test results."
 
 A note is a passive timeline entry. It changes no status, owner or next actor, and wakes no agent. Notes work on both live and terminal tasks. Record an outcome with `finish`, a dependency with `block`, and additional context with `note`.
 
-## Following the work
+## Following the Work
 
 `task check` lists everything waiting on your action, including reviews and blockers. UltiConsole's **My Tasks** starts from the same set. **Waiting on Others** shows work you requested or transferred that needs someone else's action; **Everyone** includes the team's terminal records too. The task panel shows context, evidence, next steps and the timeline.
 
