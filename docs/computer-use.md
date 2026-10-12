@@ -42,7 +42,7 @@ The Shared computer is a deliberate exception to individual ownership. Every Ult
 
 ## Evidence and Completion
 
-`computer-use screenshot` captures the visible display. `computer-use capture start` records the existing session without changing its resolution or presentation, and `capture stop` finalizes the recording while leaving the browser open. Use the separate `demo` workflow when presentation pacing and styling matter.
+`computer-use screenshot` captures the visible display. `computer-use capture start` records the existing session without changing its resolution or presentation, and `capture stop` finalizes the recording while leaving the browser open. Use the separate `demo` workflow when presentation pacing and styling matter. The demo workflow integrates [browser-use](https://github.com/browser-use/browser-use) as a driver for automated walkthroughs in the computer session being recorded.
 
 Recordings contain visible browser data. Retain evidence with the owning project's artifacts, appropriate to that folder's audience. Video does not replace a backup or confirmation that a change reached its destination.
 

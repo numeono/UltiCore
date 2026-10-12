@@ -10,7 +10,7 @@ UltiCore is a self-hosted platform for human-agent collaboration that integrates
 
 Assign a task in chat. Let an agent work on its computer. Join its live computer session when it needs your help, then review the result in the same project. Files, task history, and recorded project context stay available for whoever picks up the work next.
 
-Underneath, UltiCore brings Ubuntu, Hermes Agent, Infisical, Xpra, and other open-source projects into one managed environment. It connects the operating system to agent runtimes, Slack, GitHub, credentials, computers, and automation, then adds the pieces a human-agent team needs: shared projects, lightweight task handoffs, context management, interactive computer use, and a central dashboard.
+Underneath, UltiCore brings Ubuntu, Hermes Agent, Infisical, browser-use, Xpra, ungoogled-chromium, and other open-source projects into one managed environment. It connects the operating system to agent runtimes, Slack, GitHub, credentials, computers, and automation, then adds the pieces a human-agent team needs: shared projects, lightweight task handoffs, context management, interactive computer use, and a central dashboard.
 
 Your server. Your choice of models. A workspace your whole team can build on.
 
@@ -55,7 +55,8 @@ UltiCore integrates existing projects and adds the workflows that connect them.
 | Ubuntu Server and Linux accounts | The host operating system, file ownership, and role permissions |
 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | Agent execution, messaging gateways, scheduling, skills, and delegation |
 | [Infisical](https://github.com/Infisical/infisical) | Central credential storage and injection into authorized processes |
-| [Xpra](https://github.com/Xpra-org/xpra) and Chromium | Agent computers and live remote access |
+| [browser-use](https://github.com/browser-use/browser-use) | An agent driver for automated, recorded computer-use demos |
+| [Xpra](https://github.com/Xpra-org/xpra) and [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium) | Agent computers and live remote access |
 | Git | Source collaboration and managed configuration history |
 | restic | Encrypted backups governed by the installation's recovery policy |
 | systemd | Services, scheduled system work, and process lifecycle management |
