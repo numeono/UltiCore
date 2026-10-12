@@ -1,4 +1,4 @@
-> Development status: UltiCore is preparing for its first public alpha. This repository currently contains documentation and visual assets; source code and an installation package are not available yet. Source export review, clean-install testing, and restore testing are still pending. See [Development Status](#development-status).
+> Development status: UltiCore's first public alpha is expected to be pushed to this repository by the end of this week, Sunday, October 18, 2026. This repository currently contains documentation and visual assets; source code and an installation package are not available yet. Source export review, clean-install testing, and restore testing are still pending. See [Development Status](#development-status).
 
 <p align="center">
   <img src="assets/ulticore-banner.svg?v=lt-clear-gap" alt="UltiCore infrastructure for human-agent collaboration" width="1200" />
@@ -70,7 +70,7 @@ Read [Operations and Recovery](docs/operations.md) and the [Builder Heuristics](
 
 ## Development Status
 
-UltiCore is preparing for its first public alpha and open-source release. This repository currently contains documentation and visual assets describing the running system. The source distribution and a reproducible installation package are not included yet.
+UltiCore's first public alpha and open-source release are expected to be pushed to this repository by Sunday, October 18, 2026. This repository currently contains documentation and visual assets describing the running system. The source distribution and a reproducible installation package are not included yet.
 
 Before publishing the source distribution, the actual export still needs review, clean-install testing, and restore testing. Publishing these guides does not establish that those release checks have passed.
 
