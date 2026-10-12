@@ -4,6 +4,8 @@ UltiCore is a self-hosted platform for human-agent collaboration, built on Ubunt
 
 It builds on projects including Hermes Agent for autonomous work, Infisical for credentials, and Xpra for live computer access. UltiCore adds account provisioning, shared project structure, task coordination, context management, computer-use controls, and a dashboard for operating the system. People and agents work on the same projects through separate Linux accounts with role-appropriate permissions.
 
+UltiCore brings these tools together with opinionated defaults tested in production. The aim is a ready-made deployment with simple setup: connect your services, configure your team, and start putting agents to work. The integration and configuration work is already built in, so you can spend your time using the system instead of assembling it.
+
 The organization using an installation is configured separately from UltiCore itself. Its name, description, and internal workspace folder come from `/server/organization.json`, managed by `setup organization`. Reusable tools and documentation should not assume a particular organization, person, or hostname.
 
 ## Accounts and Interfaces

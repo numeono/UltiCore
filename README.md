@@ -12,6 +12,8 @@ Assign a task in chat. Let an agent work on its computer. Join its live computer
 
 Underneath, UltiCore brings Ubuntu, Hermes Agent, Infisical, browser-use, Xpra, ungoogled-chromium, and other open-source projects into one managed environment. It connects the operating system to agent runtimes, Slack, GitHub, credentials, computers, and automation, then adds the pieces a human-agent team needs: shared projects, lightweight task handoffs, context management, interactive computer use, and a central dashboard.
 
+UltiCore brings these tools together with opinionated defaults tested in production. The aim is a ready-made deployment with simple setup: connect your services, configure your team, and start putting agents to work. The integration and configuration work is already built in, so you can spend your time using the system instead of assembling it.
+
 Your server. Your choice of models. A workspace your whole team can build on.
 
 ## Give Your Agents a Place to Work
