@@ -1,3 +1,5 @@
+> Development status: UltiCore is preparing for its first public alpha. This repository currently contains documentation and visual assets; source code and an installation package are not available yet. Source export review, clean-install testing, and restore testing are still pending. See [Development Status](#development-status).
+
 <p align="center">
   <img src="assets/ulticore-banner.svg?v=lt-clear-gap" alt="UltiCore infrastructure for human-agent collaboration" width="1200" />
 </p>
@@ -11,8 +13,6 @@ Assign a task in chat. Let an agent work on its computer. Join its live computer
 Underneath, UltiCore brings Ubuntu, Hermes Agent, Infisical, Xpra, and other open-source projects into one managed environment. It connects the operating system to agent runtimes, Slack, GitHub, credentials, computers, and automation, then adds the pieces a human-agent team needs: shared projects, lightweight task handoffs, context management, interactive computer use, and a central dashboard.
 
 Your server. Your choice of models. A workspace your whole team can build on.
-
-This repository is a documentation preview ahead of the first public alpha. See [Development Status](#development-status) for release readiness.
 
 ## Give Your Agents a Place to Work
 
