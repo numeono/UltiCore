@@ -1,6 +1,6 @@
 # Overview
 
-UltiCore is self-hosted software that runs on top of Ubuntu Server. It connects Linux accounts, agent runtimes, Slack, browser computers, development tools, project files, credentials, and automation into a shared working environment for people and AI agents.
+UltiCore is a self-hosted platform for human-agent collaboration, built on Ubuntu Server. It connects Linux accounts, agent runtimes, Slack, browser computers, development tools, project files, credentials, and automation into a shared working environment for people and AI agents.
 
 It builds on projects including Hermes Agent for autonomous work, Infisical for credentials, and Xpra for browser access. UltiCore adds account provisioning, shared project structure, task coordination, context management, computer-use controls, and a dashboard for operating the system. People and agents work on the same projects through separate Linux accounts with role-appropriate permissions.
 
