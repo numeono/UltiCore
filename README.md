@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/ulticore-banner.svg" alt="UltiCore — open-source autonomous agent infrastructure" width="1200" />
+  <img src="assets/ulticore-banner.svg?v=lt-spacing-final" alt="UltiCore — open-source autonomous agent infrastructure" width="1200" />
 </p>
 
 Open-source autonomous agent infrastructure.
