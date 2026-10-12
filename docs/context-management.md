@@ -1,4 +1,4 @@
-# Context engineering
+# Context management
 
 UltiCore separates instructions that apply to every session from procedures needed for a particular job and evidence belonging to a project. An agent should know its responsibilities before it starts, then read the relevant procedure and source material when the task requires them.
 

@@ -10,7 +10,7 @@ These guides describe UltiCore's current operating model. Start with the overvie
 | [Project workflow](project-workflow.md) | Project folders, artifacts, and portable session summaries |
 | [Agent runtime and lifecycle](agent-runtime.md) | Agent accounts, Hermes, gateways, jobs, and delegation |
 | [Computer use](computer-use.md) | Server browsers, control channels, saved state, and live access |
-| [Context engineering](context-engineering.md) | Instruction files, skills, and the context supplied to each runtime |
+| [Context management](context-management.md) | Instruction files, skills, and the context supplied to each runtime |
 | [Operations and recovery](operations.md) | Change history, repository mirroring, maintenance, backups, and restores |
 | [Getting started](getting-started.md) | Onboarding to an existing installation and preparing for deployment |
 | [Builder heuristics](builder-heuristics.md) | The prioritized rules used to build UltiCore |
@@ -29,7 +29,7 @@ The source documents on an installed server are grouped below. These are server 
 | UltiScrum and project workflow | `tasks.md`, `reviews.md`, `project-workflow.md`, `project-session-summaries.md` |
 | Agent runtime | `managing-agents.md`, `skill-architecture.md` |
 | Computer use | `computer-use-stack.md`, `setup/initial-server-setup/computer-use-setup.md` |
-| Context engineering | `ulticore-overview.md`, `server-architecture.md`, `skill-architecture.md`, `skill-code-secrets-and-data.md`, `managing-agents.md` |
+| Context management | `ulticore-overview.md`, `server-architecture.md`, `skill-architecture.md`, `skill-code-secrets-and-data.md`, `managing-agents.md` |
 | Operations and recovery | `git-and-backup.md`, `repo-hosting-and-mirroring.md`, `maintenance-and-upgrades.md`, `resource-warning-system.md` |
 | Getting started | `setup/initial-server-setup/`, `setup/new-user/`, and current command help |
 | Builder heuristics and glossary | `builder-heuristics.md`, `glossary.md` |

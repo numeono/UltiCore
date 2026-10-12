@@ -44,11 +44,11 @@ An UltiAgent combines a Linux account, the Hermes runtime, a defined mission, se
 
 Read [agent runtime and lifecycle](docs/agent-runtime.md).
 
-## Context engineering
+## Context management
 
 UltiCore separates the context an account always receives from the guidance it loads for a particular job. Human accounts use `ULTICORE.md`; UltiAgents use `SOUL.md`. Shared skills contain narrow workflows, documentation explains the system, and project summaries let work continue across tools and sessions.
 
-Read [context engineering](docs/context-engineering.md) and the [builder heuristics](docs/builder-heuristics.md).
+Read [context management](docs/context-management.md) and the [builder heuristics](docs/builder-heuristics.md).
 
 ## Working with an existing installation
 

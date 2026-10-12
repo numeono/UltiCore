@@ -13,7 +13,7 @@ The three unprivileged roles differ along two axes, and it is worth keeping them
 
 `ultitrusted` is a POSIX trust tier, separate from these roles. It includes UltiBosses, UltiDevs and UltiAgents and grants access to shared trees and trusted commands. UltiUsers are outside it. An administrator can extend an UltiUser's access through `user grant` and `user grant-command` without giving that account a different role.
 
-Skills under `/agents/skills` provide narrow procedures, while `/server/docs` explains the system behind them. Keeping these separate reduces the context an agent needs for a task. Personal skills can live in the account's own runtime directory. This organization helps agents find instructions; it does not reduce the permissions of the process reading them. See [Context engineering](context-engineering.md).
+Skills under `/agents/skills` provide narrow procedures, while `/server/docs` explains the system behind them. Keeping these separate reduces the context an agent needs for a task. Personal skills can live in the account's own runtime directory. This organization helps agents find instructions; it does not reduce the permissions of the process reading them. See [Context management](context-management.md).
 
 ## What the boundaries protect
 

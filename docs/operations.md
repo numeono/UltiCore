@@ -14,7 +14,7 @@ sudo /server/scripts/record-change "Clarify the setup procedure" /server/docs/ex
 
 Without paths, the helper can stage unrelated work in the same repository. Automatic commits provide a fallback but may attribute an edit by file ownership or as `auto`; they do not reliably identify the editor.
 
-Change generated instructions through their source documentation and configuration. The instruction watcher regenerates account context, and the skills watcher maintains human skill links. See [context engineering](context-engineering.md).
+Change generated instructions through their source documentation and configuration. The instruction watcher regenerates account context, and the skills watcher maintains human skill links. See [context management](context-management.md).
 
 ## Collaborate through project repositories
 

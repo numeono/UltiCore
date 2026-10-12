@@ -43,7 +43,7 @@ The [project workflow](project-workflow.md) places incoming material in `intake/
 
 ## Instructions and commands
 
-Human accounts receive `~/ULTICORE.md`; autonomous agents receive mission-specific runtime instructions. Shared skills hold narrow procedures and load when needed. Operational docs explain why those procedures exist. See [context engineering](context-engineering.md).
+Human accounts receive `~/ULTICORE.md`; autonomous agents receive mission-specific runtime instructions. Shared skills hold narrow procedures and load when needed. Operational docs explain why those procedures exist. See [context management](context-management.md).
 
 Custom commands encode provisioning, permissions, change tracking, and recovery conventions. Use a provided command when it covers the action. `commands` lists the commands visible to the account, and `<command> help` explains its arguments.
 

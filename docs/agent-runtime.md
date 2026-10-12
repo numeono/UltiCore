@@ -55,6 +55,6 @@ Use `agent create <name>` to provision an account and `agent edit <name>` to cha
 
 UltiBosses can manage any agent. UltiDevs can create agents and inspect, stop or log into agents, but ownership checks limit ordinary editing and removal to agents they created. UltiAgents cannot use `agent login` to become another account.
 
-Start a fresh conversation when a mission change must apply immediately. Existing Hermes conversations can retain earlier instructions after a gateway restart; [context engineering](context-engineering.md) explains why.
+Start a fresh conversation when a mission change must apply immediately. Existing Hermes conversations can retain earlier instructions after a gateway restart; [context management](context-management.md) explains why.
 
 Deleting a Linux account does not delete its remote services, credential projects or identities. Use the managed removal workflow and complete the external cleanup it reports.
