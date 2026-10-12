@@ -4,54 +4,72 @@
 
 # UltiCore
 
-UltiCore is a shared development environment built for human-agent collaboration. It gives people and autonomous agents a common workspace, project context, and task workflow so they can build together, hand off work, and review results while keeping context and responsibility clear.
+UltiCore is self-hosted software that runs on top of Ubuntu Server and turns it into a shared working environment for people and AI agents. It connects the operating system, agent runtimes, Slack, browser computers, development tools, project files, credentials, and automation so humans and agents can work together on the same projects.
 
-Each participant works through a separate Linux account with role-based permissions. The system brings together account provisioning, agent runtimes, browser computers, credentials, and server operations. UltiConsole provides a browser interface; the same installation also exposes commands for people, agents, and automation.
+Give an agent a role, talk to it in Slack, and let it work with the tools and services you authorize. It can write code, operate websites, run recurring jobs, and pass work to another agent or back to a person for review. Your team can open the same project files, take over a browser session, and continue the work with its context intact.
+
+UltiCore builds on open-source projects including Ubuntu, Hermes Agent, Infisical, and Xpra. It adds the shared workspace, account provisioning, task coordination, browser controls, context management, and administration needed to run them together as a human-agent team.
+
+This repository is a documentation preview ahead of the first public alpha. See [Development Status](#development-status) for release readiness.
+
+## AI Teammates on Your Own Server
+
+Each autonomous agent has its own Linux account, mission, selected skills, browser profile, and configured service access. Agents can receive work through Slack, run scheduled routines, or pick up actionable tasks. Their files and runtime state persist between conversations, and you manage their access and lifecycle on your own infrastructure.
+
+UltiConsole brings the team into one browser interface: tasks, project files, agent settings, jobs, automations, server health, and browser computers. Developers can also work through SSH, a remote editor, Claude Code, Codex, or the command line.
+
+Read [Agent Runtime](docs/agent-runtime.md) and [Getting Started](docs/getting-started.md).
+
+## Human-Agent Collaboration
+
+People and agents share project files, reusable skills, and an explicit workflow for handing work to each other. A developer can prepare a plan, an agent can implement it, and a person can review the result in the same project. Each participant has a separate account with permissions appropriate to their role.
+
+UltiScrum keeps coordination small: six statuses, one task owner, an explicit next actor, and a timeline that survives handoffs. Tasks link to the plans, review candidates, and deliverables they concern. Work requested by another human returns to that person for acceptance.
+
+Read [UltiScrum](docs/ultiscrum.md), [Project Workflow](docs/project-workflow.md), and the [Security Model](docs/security-model.md).
+
+## Computer Use You Can Join
+
+Agents work in real server-side browsers with saved logins. UltiCore combines DOM controls with mouse, keyboard, and clipboard operations so an agent can move between ordinary web forms, visual interfaces, and canvas-based editors. File uploads, screenshots, session recording, and a separate demo workflow are part of the same toolset.
+
+When a task needs a person, open an authorized live portal to see the same browser and take control. Complete a login or approval, inspect the result, then let the agent continue. The browser session provides a shared place to work through steps that cannot be completed through an API alone.
+
+Read [Computer Use](docs/computer-use.md).
+
+## Context Management Across Sessions
+
+A team's knowledge should survive the conversation that produced it. UltiCore separates account instructions, reusable skills, project source material, and task outcomes so each has a place to live and a way to be found.
+
+Project folders collect plans, evidence, and retained results. Nightly automation creates portable handoffs from agent task outcomes and redacted excerpts of eligible human coding sessions. Handoff generation runs locally without model or API calls; raw transcripts remain private. People and agents can pick up the project's recorded context in a later session or another tool.
+
+Read [Context Management](docs/context-management.md).
+
+## Built on Open-Source Foundations
+
+UltiCore integrates existing projects and adds the workflows that connect them.
+
+| Foundation | Its Role in UltiCore |
+|---|---|
+| Ubuntu Server and Linux accounts | The host operating system, file ownership, and role permissions |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | Agent execution, messaging gateways, scheduling, skills, and delegation |
+| [Infisical](https://github.com/Infisical/infisical) | Central credential storage and injection into authorized processes |
+| [Xpra](https://github.com/Xpra-org/xpra) and Chromium | Server-side browsers and live remote access |
+| Git | Source collaboration and managed configuration history |
+| restic | Encrypted backups governed by the installation's recovery policy |
+| systemd | Services, scheduled system work, and process lifecycle management |
+
+UltiCore connects these foundations to Slack, GitHub, coding tools, and the services your agents need. You host the workspace and agent processes, choose their model providers, and configure access to connected services.
+
+## Operations Built Into the Workspace
+
+Provision accounts and agents through role-aware commands. Manage credentials centrally, record shared changes, inspect failed jobs, and review software updates from the same environment where the team works. Backups and recovery procedures cover the operational side of keeping a shared server useful.
+
+Read [Operations and Recovery](docs/operations.md) and the [Builder Heuristics](docs/builder-heuristics.md) behind the design.
 
 ## Development Status
 
-UltiCore is preparing for its first public alpha. This repository currently contains documentation and visual assets. The guides describe the running system and its operating model; the source distribution and a reproducible installation package are not included yet.
+UltiCore is preparing for its first public alpha and open-source release. This repository currently contains documentation and visual assets describing the running system. The source distribution and a reproducible installation package are not included yet.
 
 Before publishing the source distribution, the actual export still needs review, clean-install testing, and restore testing. Publishing these guides does not establish that those release checks have passed.
 
-Start with the [overview](docs/overview.md), or browse the [documentation index](docs/README.md).
-
-## Security Model
-
-Everyone working on UltiCore gets a standard Linux user account with one of four roles: UltiBoss, UltiDev, UltiAgent, or UltiUser. The roles distinguish administrative authority and filesystem reach from the context supplied to a coding tool or autonomous agent.
-
-An UltiAgent has the same shared filesystem reach as an UltiDev, with a narrower mission and skill set. An UltiUser has narrower filesystem permissions. Shared workspace files are accessible to every account, while credentials belong outside that workspace.
-
-Read the [security model](docs/security-model.md) for roles, network access, privileged helpers, credential handling, and the limits of these controls.
-
-## UltiScrum
-
-Most task management systems are needlessly complex. UltiScrum is optimized for lean teams, with only the essentials needed to assign work, pass it between people and agents, and get a decision on the result.
-
-Each task has one owner, one timeline, and an explicit next actor. Six statuses describe progress. Project folders hold the work itself, and task records link to the relevant files. Review makes acceptance a visible step.
-
-Read [UltiScrum](docs/ultiscrum.md) and the [project workflow](docs/project-workflow.md).
-
-## Agent Computer-Use System
-
-UltiCore runs browser sessions on the server. Agents can use DOM controls, mouse and keyboard input, and clipboard operations. A person can open an authorized live portal to inspect or take over a session. Saved browser state belongs to the account running it.
-
-Read [computer use](docs/computer-use.md) for session control, browser profiles, recording, and access rules.
-
-## Autonomous Agent Stack
-
-An UltiAgent combines a Linux account, the Hermes runtime, a defined mission, selected skills, and explicitly configured service access. Persistent gateways receive messages; scheduled and transient jobs cover other execution patterns. Shared tasks record responsibility across accounts.
-
-Read [agent runtime and lifecycle](docs/agent-runtime.md).
-
-## Context Management
-
-UltiCore separates the context an account always receives from the guidance it loads for a particular job. Human accounts use `ULTICORE.md`; UltiAgents use `SOUL.md`. Shared skills contain narrow workflows, documentation explains the system, and project summaries let work continue across tools and sessions.
-
-Read [Context Management](docs/context-management.md) and the [builder heuristics](docs/builder-heuristics.md).
-
-## Working with an Existing Installation
-
-The [getting started guide](docs/getting-started.md) covers account onboarding and the commands used after deployment. [Operations and recovery](docs/operations.md) covers managed changes, repository workflows, maintenance, backups, and restore verification.
-
-The public guides use generic examples. An installation's account names, network policy, credentials, schedules, and recovery configuration belong in its own private records.
+Start with the [Overview](docs/overview.md), browse the [Documentation Index](docs/README.md), or watch the repository for release updates.

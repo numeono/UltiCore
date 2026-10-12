@@ -45,11 +45,11 @@ codex
 
 The same routing rule applies to `claude`. Starting in a repository under `/repos`, a home directory or another location does not qualify, even if a later turn changes directory into the workspace project. Leave an explicit handoff in the project for that work. An UltiAgent's work gets its project from the task's `project` field.
 
-## What the Nightly Summaries Contain
+## What the Nightly Handoffs Contain
 
 The nightly workflow publishes eligible handoffs into the three `sessions/` folders. Hermes summaries come from project-tagged task records with an outcome, including finished work awaiting acceptance `In Review`. This path reads task records and does not summarize Hermes transcripts through another model.
 
-For human Claude Code and Codex sessions, a worker running as the owning account reconstructs the active conversation. It retains visible user and assistant prose and excludes instructions, reasoning, tool traffic, attachments and child-agent conversations. Credential-pattern redaction runs before the worker sends the bounded text to the same runtime provider under that account's login. There is no fallback to another provider. The result is validated and redacted again before publication.
+For human Claude Code and Codex sessions, a worker running as the owning account reconstructs the active conversation. It retains visible user and assistant prose and excludes instructions, reasoning, tool traffic, attachments, child-agent conversations and abandoned branches. After credential-pattern redaction, it locally renders the first request, the latest request when different, and the final assistant response after that request. A missing final response produces an incomplete notice. Each excerpt is limited to 12,000 characters and marked when truncated. Publication calls no model or API, opens no runtime credentials, and requires no network access.
 
 Raw transcripts remain private in the owning account's home directory. Published summaries are shared workspace material. Redaction cannot guarantee removal of every sensitive statement, so conversations started in project folders must be suitable for that audience and must not contain credentials.
 
