@@ -4,11 +4,11 @@
 
 # UltiCore
 
-UltiCore is a self-hosted platform for human-agent collaboration. It turns an Ubuntu server into a shared workplace where AI agents write code, use browsers, run recurring jobs, and work alongside your team. Give them responsibilities, connect them to your tools, and put them to work through Slack.
+UltiCore is a self-hosted platform for human-agent collaboration. It turns an Ubuntu server into a shared workplace where AI agents write code, run their own computers, run recurring jobs, and work alongside your team. Give them responsibilities, connect them to your tools, and put them to work through Slack.
 
-Assign a task in chat. Let an agent work through the code or browser. Jump into its live browser when it needs your help, then review the result in the same project. Files, task history, and recorded project context stay available for whoever picks up the work next.
+Assign a task in chat. Let an agent work on its computer. Join its live computer session when it needs your help, then review the result in the same project. Files, task history, and recorded project context stay available for whoever picks up the work next.
 
-Underneath, UltiCore brings Ubuntu, Hermes Agent, Infisical, Xpra, and other open-source projects into one managed environment. It connects the operating system to agent runtimes, Slack, GitHub, credentials, browsers, and automation, then adds the pieces a human-agent team needs: shared projects, lightweight task handoffs, context management, interactive computer use, and a central dashboard.
+Underneath, UltiCore brings Ubuntu, Hermes Agent, Infisical, Xpra, and other open-source projects into one managed environment. It connects the operating system to agent runtimes, Slack, GitHub, credentials, computers, and automation, then adds the pieces a human-agent team needs: shared projects, lightweight task handoffs, context management, interactive computer use, and a central dashboard.
 
 Your server. Your choice of models. A workspace your whole team can build on.
 
@@ -16,9 +16,9 @@ This repository is a documentation preview ahead of the first public alpha. See 
 
 ## Give Your Agents a Place to Work
 
-Each autonomous agent has its own Linux account, mission, selected skills, browser profile, and configured service access. Agents can receive work through Slack, run scheduled routines, or pick up actionable tasks. Their files and runtime state persist between conversations, and you manage their access and lifecycle on your own infrastructure.
+Each autonomous agent has its own Linux account, mission, selected skills, computer with saved logins, and configured service access. Agents can receive work through Slack, run scheduled routines, or pick up actionable tasks. Their files and runtime state persist between conversations, and you manage their access and lifecycle on your own infrastructure.
 
-UltiConsole brings the team into one browser interface: tasks, project files, agent settings, jobs, automations, server health, and browser computers. Developers can also work through SSH, a remote editor, Claude Code, Codex, or the command line.
+UltiConsole brings the team into one browser interface: tasks, project files, agent settings, jobs, automations, server health, and computers. Developers can also work through SSH, a remote editor, Claude Code, Codex, or the command line.
 
 Read [Agent Runtime](docs/agent-runtime.md) and [Getting Started](docs/getting-started.md).
 
@@ -30,11 +30,11 @@ UltiScrum keeps coordination small: six statuses, one task owner, an explicit ne
 
 Read [UltiScrum](docs/ultiscrum.md), [Project Workflow](docs/project-workflow.md), and the [Security Model](docs/security-model.md).
 
-## Join Your Agent in the Browser
+## Join Your Agent on Its Computer
 
-Agents work in real server-side browsers with saved logins. UltiCore combines DOM controls with mouse, keyboard, and clipboard operations so an agent can move between ordinary web forms, visual interfaces, and canvas-based editors. File uploads, screenshots, session recording, and a separate demo workflow are part of the same toolset.
+Agents run their own computers with saved logins. UltiCore combines DOM controls with mouse, keyboard, and clipboard operations so an agent can move between ordinary web forms, visual interfaces, and canvas-based editors. File uploads, screenshots, session recording, and a separate demo workflow are part of the same toolset.
 
-When a task needs a person, open an authorized live portal to see the same browser and take control. Complete a login or approval, inspect the result, then let the agent continue. The browser session provides a shared place to work through steps that cannot be completed through an API alone.
+When a task needs a person, open an authorized live portal to see the same computer and take control. Complete a login or approval, inspect the result, then let the agent continue. The computer session provides a shared place to work through steps that cannot be completed through an API alone.
 
 Read [Computer Use](docs/computer-use.md).
 
@@ -55,7 +55,7 @@ UltiCore integrates existing projects and adds the workflows that connect them.
 | Ubuntu Server and Linux accounts | The host operating system, file ownership, and role permissions |
 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | Agent execution, messaging gateways, scheduling, skills, and delegation |
 | [Infisical](https://github.com/Infisical/infisical) | Central credential storage and injection into authorized processes |
-| [Xpra](https://github.com/Xpra-org/xpra) and Chromium | Server-side browsers and live remote access |
+| [Xpra](https://github.com/Xpra-org/xpra) and Chromium | Agent computers and live remote access |
 | Git | Source collaboration and managed configuration history |
 | restic | Encrypted backups governed by the installation's recovery policy |
 | systemd | Services, scheduled system work, and process lifecycle management |

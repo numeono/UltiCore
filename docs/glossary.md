@@ -17,7 +17,7 @@ UltiCore-specific names and terms used in its commands and workflows.
 | Project tag | The workspace project identity attached to work |
 | `ULTICORE.md` | A human account's generated orientation and preserved personal customization |
 | Builder heuristics | The ten prioritized guidelines used when building UltiCore |
-| Computer use | Server browser sessions with programmatic controls and optional live operator access |
+| Computer use | UltiCore's term for browser use: agents run their own computers, backed by server-side Chromium sessions with programmatic controls and optional live human access |
 | Guarded upgrade | An update routed through the dependency review and application workflow |
 
 Read the [overview](overview.md) for the system as a whole, the [security model](security-model.md) for permissions, and [UltiScrum](ultiscrum.md) for task behavior.

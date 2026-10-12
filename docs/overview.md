@@ -1,8 +1,8 @@
 # Overview
 
-UltiCore is a self-hosted platform for human-agent collaboration, built on Ubuntu Server. It connects Linux accounts, agent runtimes, Slack, browser computers, development tools, project files, credentials, and automation into a shared working environment for people and AI agents.
+UltiCore is a self-hosted platform for human-agent collaboration, built on Ubuntu Server. It connects Linux accounts, agent runtimes, Slack, computers, development tools, project files, credentials, and automation into a shared working environment for people and AI agents.
 
-It builds on projects including Hermes Agent for autonomous work, Infisical for credentials, and Xpra for browser access. UltiCore adds account provisioning, shared project structure, task coordination, context management, computer-use controls, and a dashboard for operating the system. People and agents work on the same projects through separate Linux accounts with role-appropriate permissions.
+It builds on projects including Hermes Agent for autonomous work, Infisical for credentials, and Xpra for live computer access. UltiCore adds account provisioning, shared project structure, task coordination, context management, computer-use controls, and a dashboard for operating the system. People and agents work on the same projects through separate Linux accounts with role-appropriate permissions.
 
 The organization using an installation is configured separately from UltiCore itself. Its name, description, and internal workspace folder come from `/server/organization.json`, managed by `setup organization`. Reusable tools and documentation should not assume a particular organization, person, or hostname.
 
@@ -14,7 +14,7 @@ The [security model](security-model.md) explains the distinction between filesys
 
 People can use a terminal, a remote editor, their chosen coding CLI, or UltiConsole. Autonomous agents use the same files and commands through their own accounts. The `ulticonsole` command opens the dashboard. Tasks and Files are available to all roles; additional server and agent controls depend on the signed-in account.
 
-UltiConsole's Computers interface provides access to authorized server browser sessions and account files. Access to another account's computer depends on role and target account. The shared computer is communal; it should be treated as shared working state.
+UltiConsole's Computers interface provides access to authorized computer sessions and account files. Access to another account's computer depends on role and target account. The shared computer is communal; it should be treated as shared working state.
 
 ## Where Things Live
 

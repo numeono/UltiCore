@@ -1,6 +1,6 @@
 # Computer Use
 
-UltiCore gives an account a real Chromium browser on a virtual display. An agent can drive it with commands, and a person can watch or take control through a browser portal. Both see the same page and use the same login state.
+Agents run their own computers in UltiCore. In UltiCore terminology, computer use means browser use: each computer runs Chromium on a server-side virtual display. An agent can drive it with commands, and a person can watch or take control through a browser portal. Both see the same page and use the same login state.
 
 The browser renders into an Xpra display even when nobody is watching. In this stack, `headless` means that no portal is published; it does not mean that the page is unrendered. Plain page fetches and API requests remain available when an interactive browser is unnecessary.
 
