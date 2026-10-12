@@ -1,8 +1,8 @@
 # Security Model
 
-Everyone working on UltiCore, human or LLM agent, gets a standard Linux **user account**, provisioned with the permissions of its role. Each account holds exactly one of four roles. An UltiBoss is an administrator, an UltiDev is a human developer, an UltiAgent is a headless LLM agent, and an UltiUser has the narrowest permissions for contractors, temporary help and remote staff.
+Everyone working on UltiCore, human or LLM agent, gets a standard Linux user account, provisioned with the permissions of its role. Each account holds exactly one of four roles. An UltiBoss is an administrator, an UltiDev is a human developer, an UltiAgent is a headless LLM agent, and an UltiUser has the narrowest permissions for contractors, temporary help and remote staff.
 
-The three unprivileged roles differ along two axes, and it is worth keeping them apart. **Filesystem reach** determines what an account can read, write and execute. **Scope of context** determines what instructions an agent receives. An UltiAgent has the same baseline filesystem reach as an UltiDev, but receives deliberately narrow context. An UltiUser is narrow by permission. These are different boundaries.
+The three unprivileged roles differ along two axes, and it is worth keeping them apart. Filesystem reach determines what an account can read, write and execute. Scope of context determines what instructions an agent receives. An UltiAgent has the same baseline filesystem reach as an UltiDev, but receives deliberately narrow context. An UltiUser is narrow by permission. These are different boundaries.
 
 | Role | Filesystem and administrative reach | Default instruction context |
 |---|---|---|

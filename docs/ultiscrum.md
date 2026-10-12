@@ -19,7 +19,7 @@ Reading a task does not change its status. Tasks do not expire. Unstarted and bl
 
 ## Owner, Requester and Next Action
 
-The **owner** does the work. The **requester** put the work in front of that owner: the original sender, or the author of the latest handoff. The **next actor** is the account whose action is currently needed. Blocking a task or requesting review changes the next actor while keeping its owner.
+The owner does the work. The requester put the work in front of that owner: the original sender, or the author of the latest handoff. The next actor is the account whose action is currently needed. Blocking a task or requesting review changes the next actor while keeping its owner.
 
 When an owner finishes work requested by another human account, `task finish` sends it to that requester `In Review`. The requester accepts the result or returns it for changes. The owner remains recorded as the person or agent who did the work; acceptance records who closed it.
 
@@ -101,7 +101,7 @@ A note is a passive timeline entry. It changes no status, owner or next actor, a
 
 ## Following the Work
 
-`task check` lists everything waiting on your action, including reviews and blockers. UltiConsole's **My Tasks** starts from the same set. **Waiting on Others** shows work you requested or transferred that needs someone else's action; **Everyone** includes the team's terminal records too. The task panel shows context, evidence, next steps and the timeline.
+`task check` lists everything waiting on your action, including reviews and blockers. UltiConsole's My Tasks starts from the same set. Waiting on Others shows work you requested or transferred that needs someone else's action; Everyone includes the team's terminal records too. The task panel shows context, evidence, next steps and the timeline.
 
 For an UltiAgent with its task trigger enabled, a new actionable task starts a fresh Hermes turn. Resuming its task can start another turn. Provisioning installs the trigger but leaves it disabled until an operator enables it. Humans read their tasks on demand. See [agent runtime](agent-runtime.md).
 
