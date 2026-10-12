@@ -4,7 +4,7 @@
 
 # UltiCore
 
-UltiCore is a self-hosted platform for human-agent collaboration. It turns an Ubuntu server into a shared workplace where AI agents write code, run their own computers, run recurring jobs, and work alongside your team. Give them responsibilities, connect them to your tools, and put them to work through Slack.
+UltiCore is a self-hosted platform for human-agent collaboration that integrates with your existing tools. UltiCore installs on your own hardware on top of Ubuntu Server and gives you autonomous agents that write code, run their own computers, and work alongside your team through Slack. You get shared project workspaces, task assignment and review, reusable skills, context management across sessions, scheduled automation, and live computer sessions you can join and control. Role-based accounts, centralized credentials, version control, backups, and a dashboard bring the whole environment under your team's management.
 
 Assign a task in chat. Let an agent work on its computer. Join its live computer session when it needs your help, then review the result in the same project. Files, task history, and recorded project context stay available for whoever picks up the work next.
 
