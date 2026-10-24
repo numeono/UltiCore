@@ -25,4 +25,4 @@ This repository is the public project overview. Release announcements and the so
 
 ## Author
 
-Built by [Mads Iversen Feiring](https://github.com/numeono).
+Built by [Mads Feiring](https://github.com/numeono).
